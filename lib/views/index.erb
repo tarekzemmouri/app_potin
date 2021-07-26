@@ -1,0 +1,19 @@
+<html>
+  
+  <head>
+    <link href="index.css" rel="stylesheet">
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1> Site des gossip de THP  </h1>
+    <a href="/gossips/new"> accèder au formulaire des potins </a>
+  </body>
+  
+</html>
+
+<% gossips.each do |gossip| %>
+  <p>
+    <%= gossip.author %> <br/>
+    <%= gossip.content %>
+  </p>
+<% end %>
